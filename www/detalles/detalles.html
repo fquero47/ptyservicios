@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+       
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        
+    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="jqm/jquery.mobile-1.4.5.js"></script>
+   <!-- <script type="text/javascript">
+$.ajax({
+            url:'http://192.168.1.109/traba.php?categorias',
+            dataType: 'json',
+            type: 'get',
+            success: function(data){
+                for (var i = data.length - 1; i >= 0; i--) {
+                    $('#accordion').append('<li data-role="list-divider"><a href="#empresas" data-role="button" onclick="consult('+data[i]['ID']+')" >'+data[i]['tipopadre']+'</a></li>');
+                 //   $('#list'+data[i]['ID']+'').find('#empresas').append().hide();
+                
+                };
+
+            },
+            error: function(){},
+        });
+
+    </script>-->
+
+    <script type="text/javascript" src="consulta.js"></script>
+    <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-1.4.5.css">
+</head>
+
+<body>
+
+<!--Informacion General-->
+
+
+
+<div data-role="page" data-theme="b" id="info">
+<!--cabecera-->
+<div data-role="header">
+    <a href="index.html" data-role="button" data-icon="back">&nbsp</a>
+    <h1>Detalles</h1>
+    <div data-role="navbar" >
+        <ul id="barranav">
+<li><a href="" data-icon="bullets" class="ui-btn-active"></a></li>
+<li><a href="#phone" data-icon="phone"></a></li>
+<li><a href="#ubicacion" data-icon="location"></a></li>
+<li><a href="#promo" data-icon="grid"></a></li>
+        </ul>
+    </div>
+</div>
+
+<!--contenido-->
+<div data-role="content">
+
+<ul id="detalleempresas" data-role="listview">
+
+55555555555555555555555555555555555555555555</br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br>5555555555555555555555555555555555555555555555</br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br>
+</ul>
+
+</div>
+<!--pie de pagina-->
+<div data-role="footer" class="ui-footer" data-position="fixed" data-id="menu">
+    <div data-role="navbar">
+        <ul>
+<li><a href="index.html#Inicio" data-icon="home"></a></li>
+<li><a href="index.html#search" data-icon="search"></a></li>
+<li><a href="index.html#geomapa" data-icon="location"></a></li>
+<li><a href="index.html#contacto" data-icon="phone"></a></li>
+        </ul>
+    </div>
+        
+</div>
+
+</div>
+
+
+<!--Telefonos Pagina Web Email-->
+
+
+
+<div data-role="page" data-theme="b" id="phone">
+<!--cabecera-->
+<div data-role="header">
+    <a href="index.html" data-role="button" data-icon="back">&nbsp</a>
+    <h1>Detalles</h1>
+    <div data-role="navbar" >
+        <ul id="barranav">
+<li><a href="#info" data-icon="bullets" ></a></li>
+<li><a href="" data-icon="phone" class="ui-btn-active"></a></li>
+<li><a href="#ubicacion" data-icon="location"></a></li>
+<li><a href="#promo" data-icon="grid"></a></li>
+        </ul>
+    </div>
+</div>
+
+<!--contenido-->
+<div data-role="content">
+
+<ul id="detalleempresas" data-role="listview">
+
+44444444444444444444444444444444444444444444</br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br>444444444444444444444444444444</br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br>
+</ul>
+
+</div>
+<!--pie de pagina-->
+<div data-role="footer" class="ui-footer" data-position="fixed" data-id="menu">
+    <div data-role="navbar">
+        <ul>
+<li><a href="index.html#Inicio" data-icon="home"></a></li>
+<li><a href="index.html#search" data-icon="search"></a></li>
+<li><a href="index.html#geomapa" data-icon="location"></a></li>
+<li><a href="index.html#contacto" data-icon="phone"></a></li>
+        </ul>
+    </div>
+        
+</div>
+
+</div>
+
+
+
+<!--Ubicacion de Tiendas. Futuro Mapa-->
+
+
+
+<div data-role="page" data-theme="b" id="ubicacion">
+<!--cabecera-->
+<div data-role="header">
+    <a href="index.html" data-role="button" data-icon="back">&nbsp</a>
+    <h1>Detalles</h1>
+    <div data-role="navbar" >
+        <ul id="barranav">
+<li><a href="#info" data-icon="bullets" ></a></li>
+<li><a href="#phone" data-icon="phone"></a></li>
+<li><a href="" data-icon="location" class="ui-btn-active"></a></li>
+<li><a href="#promo" data-icon="grid"></a></li>
+        </ul>
+    </div>
+</div>
+
+<!--contenido-->
+<div data-role="content">
+
+<ul id="detalleempresas" data-role="listview">
+33333333333333333333333333333333333333333333333
+</br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br>
+</ul>
+3333333333333333333333333333333333333333</br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br>
+</div>
+<!--pie de pagina-->
+<div data-role="footer" class="ui-footer" data-position="fixed" data-id="menu">
+    <div data-role="navbar">
+        <ul>
+<li><a href="index.html#Inicio" data-icon="home"></a></li>
+<li><a href="index.html#search" data-icon="search"></a></li>
+<li><a href="index.html#geomapa" data-icon="location"></a></li>
+<li><a href="index.html#contacto" data-icon="phone"></a></li>
+        </ul>
+    </div>
+        
+</div>
+
+</div>
+
+
+
+<!--Promo-->
+
+
+
+<div data-role="page" data-theme="b" id="promo">
+<!--cabecera-->
+<div data-role="header">
+    <a href="index.html" data-role="button" data-icon="back">&nbsp</a>
+    <h1>Detalles</h1>
+    <div data-role="navbar" >
+        <ul id="barranav">
+<li><a href="#info" data-icon="bullets" ></a></li>
+<li><a href="#phone" data-icon="phone"></a></li>
+<li><a href="#ubicacion" data-icon="location"></a></li>
+<li><a href="" data-icon="grid" class="ui-btn-active"></a></li>
+        </ul>
+    </div>
+</div>
+
+<!--contenido-->
+<div data-role="content">
+
+<ul id="detalleempresas" data-role="listview">
+
+asdasfasfasfasfasfasfasffffffffffaaaaaaaaaa</br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br>asfasfasfasf</br></br></br></br></br></br>asfasfasgfasdgfvasgv
+</ul>
+
+</div>
+<!--pie de pagina-->
+<div data-role="footer" class="ui-footer" data-position="fixed" data-id="menu">
+    <div data-role="navbar">
+        <ul>
+<li><a href="index.html#Inicio" data-icon="home"></a></li>
+<li><a href="index.html#search" data-icon="search"></a></li>
+<li><a href="index.html#geomapa" data-icon="location"></a></li>
+<li><a href="index.html#contacto" data-icon="phone"></a></li>
+        </ul>
+    </div>
+        
+</div>
+
+</div>
+
+
+
+
+</body>
+
+</html> 
